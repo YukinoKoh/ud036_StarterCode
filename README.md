@@ -1,4 +1,4 @@
-![screenshot of trailer.html](img/readme_img.jpg)
+![screenshot of trailer.html](img/readme_img.png)
 
 Python source code to configure html file that shows youtube trailers. 
 
