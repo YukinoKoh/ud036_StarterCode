@@ -4,7 +4,7 @@ Python source code to configure html file that shows youtube trailers.
 
 ## File structure
 - `start.py`: It contains data of movies, page\_title, page\_comment, which 
-	you can modify and use as [following](#to-set-movie-info).  
+	you can modify and use as [following](#usage).  
 - `media.py`: It defines Movie class
 - `generateHTML.py`: It generates trailer.html
 - `trailer.html`: It is the generated html file

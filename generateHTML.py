@@ -29,7 +29,7 @@ main_page_content = '''
       <div class="modal-dialog">
         <div class="modal-content">
           <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+            <!--<img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>-->
           </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
@@ -38,7 +38,7 @@ main_page_content = '''
     </div>
 
     <!-- Main Page Content -->
-    <div class="container-fluid header">
+    <div id="header" class="container-fluid">
         <div class="container">
             <div class="col-md-10 offset-md-1">
                 <h1>{main_title}</h1>
