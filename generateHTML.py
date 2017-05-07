@@ -94,8 +94,7 @@ def create_movie_titles_content(movies):
 
 def open_movies_page(page_title, page_comment, movies):
     # Create or overwrite the output file
-    file_name = page_title.replace(" ", "_") + '.html'
-    output_file = open(file_name, 'w')
+    output_file = open("trailer.html", 'w')
 
     # Replace the movie titles placeholder generated content
     rendered_content = main_page_content.format(

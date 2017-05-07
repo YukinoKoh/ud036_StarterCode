@@ -34,5 +34,5 @@ life_in = media.Movie(" Life In A Day", "A movie consisted with clips submitted 
 	"https://www.youtube.com/watch?time_continue=107&v=bT_UmBHMYzg")
 
 
-movies = [helvetica, objectified, urbanized, indie_game, happy, exit_through, life_in]
+movies = [life_in, helvetica, happy, indie_game, exit_through, objectified, urbanized]
 generateHTML.open_movies_page(page_title, page_comment, movies)
