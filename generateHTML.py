@@ -11,11 +11,14 @@ main_page_head = '''
     <title>{main_title}</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+	href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script
+src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <!-- js to play video -->
     <script type="text/javascript" src="js/main.js"></script>
 </head>
@@ -28,9 +31,6 @@ main_page_content = '''
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <!--<img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>-->
-          </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
         </div>
@@ -42,7 +42,7 @@ main_page_content = '''
         <div class="container">
             <div class="col-md-10 offset-md-1">
                 <h1>{main_title}</h1>
-	        <p>{main_comment}</p>
+            <p>{main_comment}</p>
             </div>
         </div>
     </div>
@@ -56,7 +56,8 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_title_content = '''
-<div class="movie-title" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="movie-title" data-trailer-youtube-id="{trailer_youtube_id}"
+data-toggle="modal" data-target="#trailer">
     <div class="row">
     <div class="col-xs-3">
         <img class="img-responsive" src="{poster_image_url}" width="100%">
@@ -70,6 +71,7 @@ movie_title_content = '''
 
 
 def create_movie_titles_content(movies):
+    """ Create content for each movie data """
     # The HTML content for this section of the page
     content = ''
     # Iterate over movies, passed from start.py to generate and format
@@ -87,24 +89,25 @@ def create_movie_titles_content(movies):
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
             movie_title=movie.title,
-            movie_comment = movie.storyline
+            movie_comment=movie.storyline
         )
     return content
 
 
 def open_movies_page(page_title, page_comment, movies):
+    """ Generate and open html page """
     # Create or overwrite the output file
     output_file = open("trailer.html", 'w')
 
     # Replace the movie titles placeholder generated content
     rendered_content = main_page_content.format(
-        movie_titles = create_movie_titles_content(movies),
-        main_title = page_title,
-        main_comment = page_comment
+        movie_titles=create_movie_titles_content(movies),
+        main_title=page_title,
+        main_comment=page_comment
     )
-    #Replace the page title placeholder with title
+    # Replace the page title placeholder with title
     rendered_page_head = main_page_head.format(
-        main_title = page_title
+        main_title=page_title
     )
     # Output the file
     output_file.write(rendered_page_head + rendered_content)
