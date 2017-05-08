@@ -6,6 +6,12 @@ page_title = "Inspirational movies"
 page_comment = '''Click or tap, depend on your device, to watch trailers. <br/>
 I recommend to watch these whether you are a designer:)'''
 
+first_contact = media.Movie('''Documentary National Geographic - First
+                             Contact Lost Tribes of the Amazon -
+                             Documentaries 2016''',
+                             "A documentaly about isolated indigenous tribe",
+                             "http://docuwiki.net/images/4/4e/First-Contact-Lost-Tribe-of-the-Amazon-Cover.jpg",  # NOQA
+                             "https://www.youtube.com/watch?v=kXId0he7Qyg")
 helvetica = media.Movie("Helvetica",
                         '''A documentary about typography and graphic design,
                         centered on the typeface of the same name. It's the
@@ -50,6 +56,6 @@ life_in = media.Movie(" Life In A Day",
                       "https://upload.wikimedia.org/wikipedia/en/6/64/Lifeinaday_2011.jpg",  # NOQA
                       "https://www.youtube.com/watch?time_continue=107&v=bT_UmBHMYzg")  # NOQA
 
-movies = [life_in, helvetica, happy, indie_game, exit_through,
-          objectified, urbanized]
+movies = [life_in, first_contact, helvetica, happy, indie_game,
+          exit_through, objectified, urbanized]
 generateHTML.open_movies_page(page_title, page_comment, movies)
