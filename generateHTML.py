@@ -40,10 +40,8 @@ main_page_content = '''
     <!-- Main Page Content -->
     <div id="header" class="container-fluid">
         <div class="container">
-            <div class="col-md-10 offset-md-1">
                 <h1>{main_title}</h1>
             <p>{main_comment}</p>
-            </div>
         </div>
     </div>
     <div class="container">
