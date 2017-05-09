@@ -20,7 +20,7 @@ Python source code to configure html file that shows youtube trailers.
 ## Usage
 ### To generate html file 
 Command line: 
-```
+```python
 $ python start.py
 ```
 This will generate trailer.html
@@ -53,8 +53,8 @@ instance_name = media.Movie(arg1, arg2, arg3, arg4)
 movies = [instance_name, instance_name2, instance_name3,....]
 ```
 
-## Licence
-[MIT Licence](https://choosealicense.com/licenses/mit/) © [Yukino Kohmoto](http://yukinokoh.github.io/portfolio/)
+## License
+[MIT License](https://choosealicense.com/licenses/mit/) © [Yukino Kohmoto](http://yukinokoh.github.io/portfolio/)
 
 
 
