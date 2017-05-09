@@ -44,7 +44,7 @@ main_page_content = '''
             <p>{main_comment}</p>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         {movie_titles}
     </div>
   </body>
