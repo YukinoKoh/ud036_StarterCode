@@ -20,7 +20,7 @@ href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.cs
     <script
 src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <!-- js to play video -->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </head>
 '''
 
