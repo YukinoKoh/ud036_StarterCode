@@ -1,7 +1,6 @@
 import media
 import generateHTML
 
-
 page_title = "Inspirational movies"
 page_comment = '''Click or tap, depend on your device, to watch trailers. <br/>
 I recommend to watch these whether you are a designer:)'''
