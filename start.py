@@ -5,6 +5,12 @@ page_title = "Inspirational movies"
 page_comment = '''Click or tap, depend on your device, to watch trailers. <br/>
 I recommend to watch these whether you are a designer:)'''
 
+black_mirror = media.Movie('Black Mirror',
+                           '''British Sci-fi that let us imagine possibility
+                            of techology without well-thought.''', 
+                             "https://upload.wikimedia.org/wikipedia/en/2/24/BlackMirrorTitleCard.jpg",  # NDQA
+                             "https://www.youtube.com/watch?v=jROLrhQkK78")
+
 first_contact = media.Movie('''Documentary National Geographic - First
                              Contact Lost Tribes of the Amazon -
                              Documentaries 2016''',
@@ -55,6 +61,6 @@ life_in = media.Movie(" Life In A Day",
                       "https://upload.wikimedia.org/wikipedia/en/6/64/Lifeinaday_2011.jpg",  # NOQA
                       "https://www.youtube.com/watch?time_continue=107&v=bT_UmBHMYzg")  # NOQA
 
-movies = [life_in, first_contact, helvetica, happy, indie_game,
-          exit_through, objectified, urbanized]
+movies = [life_in, first_contact, helvetica, black_mirror, happy, 
+          indie_game, exit_through, objectified, urbanized]
 generateHTML.open_movies_page(page_title, page_comment, movies)
