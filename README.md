@@ -2,6 +2,7 @@
 
 Python source code to configure html file that shows youtube trailers. 
 
+You can check the site from [here](https://yukinokoh.github.io/ud036_StarterCode/trailer.html)
 ## File structure
 - `start.py`: It contains data of movies, page\_title, page\_comment, which 
 	you can modify and use as [following](#usage).  
