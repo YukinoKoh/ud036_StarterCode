@@ -55,7 +55,7 @@ movies = [instance_name, instance_name2, instance_name3,....]
 ```
 
 ## License
-[MIT License](https://choosealicense.com/licenses/mit/) © [Yukino Kohmoto](http://yukinokoh.github.io/portfolio/)
+[MIT License](https://choosealicense.com/licenses/mit/) © [Yukino Kohmoto](http://yukinokoh.github.io/)
 
 
 
