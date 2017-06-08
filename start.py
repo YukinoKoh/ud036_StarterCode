@@ -15,7 +15,7 @@ first_contact = media.Movie('''Documentary National Geographic - First
                              Contact Lost Tribes of the Amazon -
                              Documentaries 2016''',
                              "A documentaly about isolated indigenous tribe",
-                             "http://docuwiki.net/images/4/4e/First-Contact-Lost-Tribe-of-the-Amazon-Cover.jpg",  # NOQA
+                             "https://docuwiki.net/images/4/4e/First-Contact-Lost-Tribe-of-the-Amazon-Cover.jpg",  # NOQA
                              "https://www.youtube.com/watch?v=kXId0he7Qyg")
 helvetica = media.Movie("Helvetica",
                         '''A documentary about typography and graphic design,
